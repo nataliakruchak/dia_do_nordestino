@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>História do Dia do Nordestino</title>
+    <link rel="stylesheet" href="styles.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+        color: #333;
+    }
+
+    .logo-container {
+        flex: 1;
+    }
+
+    .hero {
+        padding: 20px;
+        background-color: #fff;
+        text-align: center;
+        border-radius: 100000px;
+        position: relative;
+        background-image: url('imagens/nordeste3.jpeg'); 
+        overflow: hidden; 
+        background-size: cover;
+        background-position: center;
+    }
+
+    .hero::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5); 
+        z-index: 1;
+    }
+
+    .hero h2, .hero p{
+        margin-top: 0;
+        color: #fff;
+    }
+
+    .hero-image {
+        height: 300px;
+        width: 20px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto; 
+    }
+
+    .timeline {
+        border-left: 2px solid #b34747;
+        padding-left: 20px;
+        position: relative;
+    }
+
+    .timeline-item {
+        margin-bottom: 20px;
+    }
+
+    .timeline-item h4 {
+        margin: 0 0 5px;
+        color: #b34747;
+    }
+
+    iframe {
+        width: 560px;
+        height: 315px;
+        border: none;
+        border-radius: 10px;
+    }
+
+    body {
+        background-image: url('imagens/fundo.avif'); 
+        background-size: cover; 
+        background-position: center; 
+        background-repeat: no-repeat; 
+    }
+</style>
+
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo-container">
+                <a href="index.html" class="logo-link">
+                    <img src="imagens/image(2).png" alt="Logo" class="logo">
+                </a>
+            </div>
+            <div class="header-text">
+                <a href="index.html" class="header-title-link">
+                    <h1>Dia do Nordestino</h1>
+                </a>
+            </div>
+            <nav>
+                <a href="historia.html" class="nav-link active">
+                    <i class="fas fa-book-open"></i> História
+                </a>
+                <a href="cultura.html" class="nav-link">
+                    <i class="fas fa-music"></i> Cultura
+                </a>
+                <a href="mapa.html" class="nav-link">
+                    <i class="fas fa-map"></i> Mapa
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <br>
+        <section class="hero">
+            <div><h2>História do Dia do Nordestino</h2>
+            <div class="content">
+                <p class="descricao-nordestino">
+                    O Dia do Nordestino, comemorado em 8 de outubro, é uma data dedicada a homenagear a história, os costumes e a garra do povo nordestino, que moldou a cultura do Brasil.
+                </p>
+            </div>
+
+        </section>
+        
+        <section class="historical-context">
+            <h3>Contexto Histórico</h3>
+            <p>O Dia do Nordestino foi instituído para reconhecer a importância histórica e cultural da região Nordeste do Brasil. Esta data é marcada por eventos que destacam as tradições, histórias e contribuições da região para a cultura nacional. Com sua rica diversidade cultural e histórica, o Nordeste é um pilar essencial na formação da identidade brasileira.</p>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <h4>Década de 1950</h4>
+                    <p>A década de 1950 viu um aumento na valorização da cultura nordestina através de movimentos culturais e musicais.</p>
+                </div>
+                <div class="timeline-item">
+                    <h4>Década de 1980</h4>
+                    <p>O Nordeste começou a receber mais reconhecimento nacional com festivais e eventos culturais promovendo suas tradições.</p>
+                </div>
+                <div class="timeline-item">
+                    <h4>2000 em diante</h4>
+                    <p>O Dia do Nordestino foi oficialmente instituído e começou a ser celebrado em várias partes do Brasil com eventos e festividades.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="celebrations">
+            <h3>Como é Comemorado</h3>
+            <p>Durante o Dia do Nordestino, diversas celebrações ocorrem em toda a região e em outros locais do Brasil. Festivais, apresentações culturais, e eventos gastronômicos são comuns, destacando a música vibrante, as danças tradicionais e os pratos típicos do Nordeste.</p><br>
+            <div class="celebration-images">
+                <img src="imagens/festival.webp" alt="Festival Nordestino" class="celebration-image">
+                <img src="imagens/comida.webp" alt="Culinária Nordestina" class="celebration-image">
+                
+            </div>
+        </section>
+
+        <section class="celebrations">
+            <h3>Significado Cultural e Importância Atual</h3>
+            <p>O Dia do Nordestino é uma oportunidade para celebrar a rica diversidade cultural da região e para aumentar a conscientização sobre a importância do Nordeste no contexto nacional. A data promove a identidade regional e contribui para o turismo e a economia local.</p><br>
+            <p>Além de destacar as tradições e a cultura nordestina, o Dia do Nordestino também serve para abordar questões sociais e econômicas enfrentadas pela região, incentivando um desenvolvimento mais equitativo e uma maior valorização das suas contribuições para o Brasil.</p>
+            <br>
+            <div class="celebration-videos">
+                 <iframe src="https://www.youtube.com/embed/YHndgL1BpU0?si=kqw7_KYSo27c95pF" title="Forró" allowfullscreen class="celebration-video"></iframe>
+            </div>
+            
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Dia do Nordestino. Feito com ❤️ para celebrar o Nordeste.</p>
+    </footer>
+</body>
+</html>

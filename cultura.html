@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cultura Nordestina</title>
+    <link rel="stylesheet" href="styles.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<style>
+    .hero {
+        padding: 20px;
+        background-color: #fff;
+        text-align: center;
+        border-radius: 100000px;
+        position: relative;
+        background-image: url('imagens/Designer\(17\).jpeg'); 
+        overflow: hidden; 
+        background-size: cover;
+        background-position: top;
+    }
+
+    .hero::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5); 
+        z-index: 1;
+    }
+
+    .hero h2, .hero p{
+        margin-top: 0;
+        color: #fff;
+    }
+
+    .hero-image {
+        height: 300px;
+        width: 20px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto; 
+    }
+
+    .logo-container {
+        flex: 1;
+    }
+
+    iframe {
+        width: 560px;
+        height: 315px;
+        border: none;
+        border-radius: 10px;
+    }
+
+    .timeline-section {
+        padding: 40px 20px;
+        text-align: center;
+        margin: 10px auto;
+        max-width: 1200px;
+        border-radius: 8px;
+    }
+
+    .timeline-section h3{
+        color: #b34747;
+        font-size: 1.4em;
+
+    }
+
+    .timeline {
+        position: relative;
+        padding: 20px 0;
+        border-left: 2px solid #b34747;
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    .timeline-item {
+        position: relative;
+        margin-bottom: 30px;
+        padding-left: 30px;
+        
+    }
+
+    .timeline-item::before {
+        content: '';
+        position: absolute;
+        left: -12px;
+        top: 5px;
+        width: 20px;
+        height: 20px;
+        background-color: #b34747;
+        border-radius: 50%;
+        border: 2px solid #fff;
+    }
+
+    .timeline-item h4 {
+        font-size: 1.2em;
+        color: #b34747;
+        margin-bottom: 10px;
+        text-align: left;
+
+
+    }
+
+    .timeline-item p {
+        font-size: 1.2em;
+        color: #555;
+        text-align: justify;
+
+    }
+
+    .timeline-item li {
+        text-align: left;
+
+    }
+
+    .timeline-item-title {
+        font-size: 1.5em;
+        color: #b34747;
+        text-align: left;
+
+    }
+
+    .timeline-item-date {
+        font-size: 1.2em;
+        color: #666;
+    }
+
+    .timeline-item-description {
+        font-size: 1em;
+        color: #444;
+        
+    }
+        
+    body {
+        background-image: url('imagens/fundo.avif'); 
+        background-size: cover; 
+        background-position: center; 
+        background-repeat: no-repeat;
+    }
+</style>
+
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo-container">
+                <a href="index.html" class="logo-link">
+                    <img src="imagens/image(2).png" alt="Logo" class="logo">
+                </a>
+            </div>
+            <div class="header-text">
+                <a href="index.html" class="header-title-link">
+                    <h1>Dia do Nordestino</h1>
+                </a>
+            </div>
+            <nav>
+                <a href="historia.html" class="nav-link active">
+                    <i class="fas fa-book-open"></i> História
+                </a>
+                <a href="cultura.html" class="nav-link">
+                    <i class="fas fa-music"></i> Cultura
+                </a>
+                <a href="mapa.html" class="nav-link">
+                    <i class="fas fa-map"></i> Mapa
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <br>
+        <section class="hero">
+            <div><h2>Cultura Nordestina</h2>
+            <div class="content">
+                <p class="descricao-nordestino">
+                    A cultura nordestina é vibrante e diversa, marcada por manifestações populares que refletem a identidade única da região.  
+                </p>
+            </div>
+
+        </section>
+        <section class="cultural-highlights">
+            <h3>Elementos da Cultura Nordestina</h3>
+            <p style="font-size: 1.2em;">Conheça alguns dos principais elementos que moldam a rica cultura do Nordeste brasileiro:</p>
+            <br>
+            <div class="culture-grid">
+
+                <div class="culture-item">
+                    <section class="cultural-highlights" style="background-color: #fff3e0;">
+                        <h3 style="font-size: 1.5em;">Forró</h3>
+                        <p style="font-size: 1.2em;">Descrubra mais sobre esse gênero musical e dança tradicional do Nordeste do Brasil, que tem uma rica história e um estilo vibrante.</p>
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <div class="timeline-content">
+                                    <h4>Origens e História</h4>
+                                    <p><strong>Século XIX:</strong> O forró tem suas raízes no século XIX, e suas origens são um mix de influências portuguesas, africanas e indígenas. A palavra "forró" é derivada do termo "forrobodó", que em português arcaico significa "festa" ou "confusão alegre".</p>
+                                    <p><strong>Popularização:</strong> Sua popularização ocorreu ao longo do século XX, especialmente com a contribuição de figuras icônicas como Luiz Gonzaga, conhecido como o "Rei do Baião". Gonzaga foi fundamental para a divulgação do forró em todo o Brasil e ajudou a popularizar o baião, um dos estilos dentro do forró.</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-content">
+                                    <h4>Instrumentos</h4>
+                                    <p><strong>Sanfona:</strong> Também conhecida como acordeão, a sanfona é considerada a alma do forró e é um dos principais instrumentos utilizados no gênero.</p>
+                                    <p><strong>Zabumba:</strong> Um tipo de tambor grande que é tocado com baquetas e fornece o ritmo característico do forró.</p>
+                                    <p><strong>Triângulo:</strong>  Um instrumento de percussão que adiciona um som metálico e rítmico à música.</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-content">
+                                    <h4>Ritmos e Danças</h4>
+                                    <p><strong>Baião:</strong> Um ritmo rápido e animado, geralmente associado à dança enérgica.</p>
+                                    <p><strong>Xote:</strong> Um ritmo mais lento e romântico, com um estilo de dança mais suave.</p>
+                                    <p><strong>Arrasta-pé:</strong> Um estilo mais acelerado e com passos que se arrastam, típico das festas juninas.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <iframe src="https://www.youtube.com/embed/F9sUo43avt4?si=MuXlRaAxy3XfCXez" title="Forró" allowfullscreen></iframe>                 
+                </div>   
+
+                <div class="culture-item">
+                    <section class="cultural-highlights" style="background-color: #fff3e0;">
+                        <h3 style="font-size: 1.5em;">Frevo</h3>
+                        <p style="font-size: 1.2em;">O frevo é um dos ritmos e danças mais emblemáticos do Carnaval no Nordeste do Brasil, particularmente em Recife e Olinda. A sua história é rica e reflete a complexidade cultural da região.</p>
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <div class="timeline-content">
+                                    <h4>Origens e História</h4>
+                                    <p>Surgiu no final do século XIX em Recife e Olinda, influenciado por ritmos africanos, indígenas e europeus, com raízes no maxixe.</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-content">
+                                    <h4>Ritmos e Música</h4>
+                                    <p>É conhecido pelo ritmo rápido e contagiante, com uma sonoridade vibrante criada por metais e percussão.</p>
+                                    <br>
+                                    <p>Há três principais estilos de frevo:</p>
+                                    <br>
+                                    <p><strong>Frevo de Rua:</strong> Mais dançante e rápido, tocado pelas bandas de frevo durante os desfiles de Carnaval.</p>
+                                    <p><strong>Frevo Canção:</strong> Estilo mais melódico e lento, popular em apresentações em palco.</p>
+                                    <p><strong>Frevo de Bloco:</strong>  Mantém a energia do frevo de rua, tocado por bandas que seguem os blocos carnavalescos.</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-content">
+                                    <h4>Dança</h4>
+                                    <p>A dança é acrobática e rápida, muitas vezes com o uso de uma sombrinha ou guarda-chuva como parte da coreografia.</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-content">
+                                    <h4>Importância Cultural</h4>
+                                    <p>É um ícone do Carnaval de Recife e Olinda e foi reconhecido pela UNESCO como Patrimônio Cultural Imaterial da Humanidade em 2012.</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-content">
+                                    <h4>Modernidade</h4>
+                                    <p>Continuamente evolui, mantendo sua tradição viva através de novos artistas e grupos dedicados ao gênero.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <iframe src="https://www.youtube.com/embed/6XruFqqeq9o?si=dU9k590gVbVXS87P" title="Forró" allowfullscreen></iframe>                 
+                </div>   
+
+                <div class="culture-item">
+                    <section class="cultural-highlights" style="background-color: #fff3e0;">
+                        <h3 style="font-size: 1.5em;">Literatura de Cordel </h3>
+                        <p style="font-size: 1.2em;">A Literatura de Cordel é uma forma de literatura popular que tem suas raízes na tradição oral e impresso no Brasil, especialmente no Nordeste. Originada na Europa e adaptada ao contexto brasileiro, a Literatura de Cordel é uma expressão única da cultura nordestina. </p>
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <div class="timeline-content">
+                                    <h4>Origens e História</h4>
+                                    <p><strong>Influências:</strong> Originada na Europa, especialmente na Espanha e Portugal, e adaptada ao Brasil durante o período colonial.</p>
+                                    <p><strong>Desenvolvimento:</strong>  Estabelecida no Nordeste brasileiro como uma forma de contar histórias populares em verso.</p>
+
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-content">
+                                    <h4>Características</h4>
+                                    <p><strong>Formato:</strong> OImpressa em folhetos pequenos com capas ilustradas por xilogravuras.</p>
+                                    <p><strong>Temas:</strong>  Inclui lendas, histórias de heróis, eventos históricos e sátiras sociais.</p>
+                                    <p><strong>Estilo:</strong>  Linguagem simples e direta, com rimas e métrica para facilitar a memorização e recitação.</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-content">
+                                    <h4>Autores e Influências</h4>
+                                    <p><strong>Cordelistas:</strong>  Autores como Leandro Gomes de Barros e João Ribeiro são renomados no gênero.</p>
+                                    <p><strong>Influências:</strong>  Mistura tradições portuguesas, africanas e locais, refletindo a vida cotidiana e as crenças populares.</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-content">
+                                    <h4>Importância Cultural</h4>
+                                    <p><strong>Preservação:</strong>  Mantém vivas tradições e histórias locais.</p>
+                                    <p><strong>Educação e Entretenimento:</strong>  nsmite conhecimentos e valores culturais.</p>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </section>
+                    <iframe src="https://www.youtube.com/embed/6OPZqLIUtQQ?si=B_lQoXBdpv1OT1mQ" title="Forró" allowfullscreen></iframe>                 
+                </div>   
+
+                <div class="culture-item">
+                    <section class="cultural-highlights" style="background-color: #fff3e0;">
+                        <h3 style="font-size: 1.5em;">Artesanato Nordestino</h3>
+                        <p style="font-size: 1.2em;">Descubra os aspectos fascinantes do artesanato no Nordeste brasileiro:</p>
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <div class="timeline-content">
+                                    <h4>Diversidade e Tipos de Artesanato</h4>
+                                    <p><strong>Artesanato em Madeira:</strong> Inclui peças como objetos de decoração, móveis e utensílios de uso cotidiano, com técnicas regionais distintas.</p>
+                                    <p><strong>Renda:</strong> Trabalhos em renda, como a renda renascença e a renda de bilro, são conhecidos por seus padrões intrincados e são especialmente produzidos na Paraíba e em Pernambuco.</p>
+                                    <p><strong>Cerâmica:</strong> Conhecida por sua utilidade e beleza, com destaque para as figuras de barro de Caruaru e as peças de Mestre Vitalino.</p>
+                                    <p><strong>Tecido e Bordado:</strong> Técnicas tradicionais de bordado são utilizadas para criar tecidos com motivos regionais.</p>
+                                    <p><strong>Artesanato em Palha:</strong> Inclui chapéus e cestas feitas de palha de coqueiro e carnaúba.</p>
+                                    <p><strong>Bijuterias e Acessórios:</strong> Utilizam materiais como sementes, conchas e pedras para criar acessórios únicos.</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-content">
+                                    <h4>Características Culturais e Sociais</h4>
+                                    <p><strong>Influências e Tradições:</strong> O artesanato é influenciado por tradições indígenas, africanas e portuguesas, resultando em peças funcionais e artísticas.</p>
+                                    <p><strong>Festas e Eventos:</strong> Muitas peças são criadas para festas e celebrações, como o São João e o Carnaval.</p>
+                                    <p><strong>Mercados e Feiras:</strong> Feiras como o Mercado de São José em Caruaru são centros importantes para o artesanato.</p>
+                                    <p><strong>Economia e Sustento:</strong> O artesanato é uma importante fonte de renda e preservação cultural para muitas famílias nordestinas.</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-content">
+                                    <h4>Preservação e Valorização</h4>
+                                    <p><strong>Valorização:</strong> O artesanato é valorizado por sua autenticidade e papel na preservação das tradições culturais.</p>
+                                    <p><strong>Apoio e Promoção:</strong> Iniciativas governamentais e organizações trabalham para apoiar os artesãos e promover a continuidade das práticas tradicionais.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <iframe src="https://www.youtube.com/embed/TBR8jZXUZfM?si=IJzv9iRGWrKhhsxl" title="Forró" allowfullscreen></iframe>                    
+                </div>
+
+                <div class="culture-item">
+                    <section class="cultural-highlights" style="background-color: #fff3e0;">
+                        <h3 style="font-size: 1.5em;">Culinária Nordestina</h3>
+                        <p style="font-size: 1.2em;">Explore a rica e diversificada culinária do Nordeste brasileiro através dos principais pratos e influências</p>
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <div class="timeline-content">
+                                    <h4>Influências Culturais e Históricas</h4>
+                                    <p><strong>Indígenas:</strong> As tradições culinárias indígenas contribuíram com ingredientes nativos como mandioca, milho e frutas tropicais, que são amplamente utilizados na culinária nordestina.</p>
+                                    <p><strong>Africanas:</strong> A influência africana é evidente no uso de dendê (óleo de palma) e na preparação de pratos como a feijoada e a moqueca, que incorporam técnicas e sabores africanos.</p>
+                                    <p><strong>Portuguesas:</strong> Os colonizadores portugueses introduziram ingredientes como o bacalhau e técnicas de preparo que foram adaptadas à culinária local.</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-content">
+                                    <h4>Pratos Típicos</h4>
+                                    <p><strong>Feijoada:</strong> Um prato tradicional à base de feijão preto cozido com várias partes do porco, como carne seca e linguiça. Geralmente servido com arroz, couve, farofa e laranja.</p>
+                                    <p><strong>Carne de Sol:</strong> Carne bovina salgada e seca, usada em vários pratos.</p>
+                                    <p><strong>Baião de Dois:</strong>  Arroz e feijão misturados com carne seca e queijo coalho.</p>
+                                    <p><strong>Moqueca:</strong> Ensopado de peixe ou frutos do mar com leite de coco e dendê.</p>
+                                    <p><strong>Acarajé:</strong> Bolinho de feijão-fradinho frito, recheado com vatapá e caruru.</p>
+                                    <p><strong>Cuscuz:</strong> Feito de milho ou arroz, pode ser doce ou salgado.</p>
+                                    <p><strong>Tapioca:</strong> Panqueca de fécula de mandioca, recheada com diversos ingredientes.</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-content">
+                                    <h4>Ingredientes Comuns</h4>
+                                    <p><strong>Mandioca:</strong> Utilizada em diversas formas, como farinha de mandioca (para farofa) e tapioca.</p>
+                                    <p><strong>Milho:</strong> Presente em pratos como o cuscuz e a pamonha.</p>
+                                    <p><strong>Dendê:</strong> Óleo de palma que dá um sabor característico a muitos pratos.</p>
+                                    <p><strong>Leite de Coco:</strong> Usado em pratos como moqueca e cocadas.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <iframe src="https://www.youtube.com/embed/1zrH-TZIXns?si=IhVGnrsntq_lvRrU" title="Forró" allowfullscreen></iframe>                 
+                </div>   
+            </div>
+        </section>
+        
+        <section class="festivities">
+            <h3>Festas e Tradições</h3>
+            <p>As festas populares no Nordeste são momentos de celebração, cultura e união. Entre elas, destacam-se o São João e o Carnaval, com danças, músicas e comidas típicas que reúnem comunidades inteiras.</p>
+            
+            <div class="festivity-details"></div>
+
+                <h4><br>Lavagem do Bonfim</h4>
+                <p>Essa celebração ocorre em Salvador, Bahia, em janeiro. É uma festa de sincretismo religioso, onde baianas vestidas com trajes típicos carregam jarras de água para lavar as escadarias da Igreja do Bonfim. A celebração mistura elementos do catolicismo e das religiões de matriz africana, principalmente o candomblé, criando uma festa de fé, música e dança.</p>
+                <img src="imagens/bonfim.jpg" alt="Carnaval Nordestino" class="festivity-image">
+
+                <h4><br>Carnaval Nordestino</h4>
+                <p>Embora o Carnaval de cidades como Rio de Janeiro e São Paulo sejam internacionalmente conhecidos, o Carnaval nordestino, especialmente em cidades como Recife, Olinda e Salvador, oferece uma experiência única. O frevo e o maracatu dominam as ruas de Recife e Olinda, onde blocos e troças carnavalescas desfilam ao som de bandas e orquestras locais. Em Salvador, o ritmo do axé contagia multidões com trios elétricos e blocos, tornando o Carnaval baiano um dos mais intensos do país.</p>
+                <img src="imagens/carnavall.jpeg" alt="Carnaval Nordestino" class="festivity-image">
+
+
+                <h4><br><br>Festa de São João</h4>
+                <p>A Festa de São João é uma das mais populares no Nordeste e acontece no mês de junho, celebrando os santos juninos: São João, Santo Antônio e São Pedro. Essa festa se destaca pelas quadrilhas, danças típicas com coreografias coloridas, e pelo forró, que embala a festa ao som da sanfona, zabumba e triângulo. A gastronomia é outro ponto forte, com pratos típicos como pamonha, canjica, milho cozido e bolo de fubá.</p>
+                <img src="imagens/saojoao.webp" alt="Carnaval Nordestino" class="festivity-image">
+                
+                <h4><br><br>Bumba Meu Boi</h4>
+                <p>Típico do Maranhão, o Bumba Meu Boi é uma das manifestações culturais mais importantes do Brasil, contando com elementos de teatro, dança e música. A encenação gira em torno da morte e ressurreição de um boi, misturando influências indígenas, africanas e portuguesas. O festival acontece principalmente em junho, mas se estende até julho em algumas cidades.</p>
+                <img src="imagens/bumba.jpg" alt="Carnaval Nordestino" class="festivity-image">
+
+                <h4><br><br>Festa do Círio de Nazaré</h4>
+                <p>Celebrada em Belém do Pará, mas com fortes raízes no Maranhão e em outras partes do Nordeste, essa festa religiosa é uma das maiores procissões católicas do mundo. É uma homenagem à Nossa Senhora de Nazaré e atrai milhões de fiéis em outubro, que seguem uma grande romaria pelas ruas em devoção à santa.</p>
+                <img src="imagens/cirio.jpg" alt="Carnaval Nordestino" class="festivity-image">
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Dia do Nordestino. Feito com ❤️ para celebrar o Nordeste.</p>
+    </footer>
+
+</body>
+</html>

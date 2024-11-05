@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cultura Nordestina</title>
+    <link rel="stylesheet" href="styles.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<style>
+    .logo-container {
+        flex: 1;
+    }
+    .hero {
+        padding: 20px;
+        background-color: #fff;
+        text-align: center;
+        border-radius: 100000px;
+        position: relative;
+        background-image: url('imagens/fundo2.png'); 
+        overflow: hidden; 
+        background-size: cover;
+        background-position: center;
+
+    }
+    .hero::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5); 
+        z-index: 1;
+    }
+
+    .hero h2, .hero p{
+        margin-top: 0;
+        color: #fff;
+    }
+
+    .hero-image {
+        height: 300px;
+        width: 20px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto; 
+    }
+
+    .cultural-highlights {
+        padding: 40px 20px;
+        background-color: #fff;
+        text-align: center;
+        margin: 10px auto;
+        max-width: 1200px;
+        border-radius: 8px;
+        
+    }
+    .cultural-highlights h3 {
+        font-size: 1.3em;
+        
+    }
+
+    .culture-grid {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .culture-item {
+        width: 80%;
+        background-color: #fff3e0;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+    }
+
+    .culture-item:hover {
+        transform: translateY(-10px);
+    }
+
+    .culture-image {
+        max-width: 100%;
+        height: auto;
+        border-radius: 8px;
+    }
+
+    .culture-item h4 {
+        margin-top: 15px;
+        color: #b34747;
+        font-size: 1.4em;
+    }
+
+    .culture-item p {
+        color: #666;
+    }
+
+    body {
+        background-image: url('imagens/fundo.avif'); 
+        background-size: cover; 
+        background-position: center; 
+        background-repeat: no-repeat; 
+    }
+
+    .region img {
+        max-width: 60%;
+        border-radius: 10px;
+    }
+
+    .celebrations p {
+        text-align: center;
+    }
+</style>
+
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo-container">
+                <a href="index.html" class="logo-link">
+                    <img src="imagens/image(2).png" alt="Logo" class="logo">
+                </a>
+            </div>
+            <div class="header-text">
+                <a href="index.html" class="header-title-link">
+                    <h1>Dia do Nordestino</h1>
+                </a>
+            </div>
+            <nav>
+                <a href="historia.html" class="nav-link active">
+                    <i class="fas fa-book-open"></i> História
+                </a>
+                <a href="cultura.html" class="nav-link">
+                    <i class="fas fa-music"></i> Cultura
+                </a>
+                <a href="mapa.html" class="nav-link">
+                    <i class="fas fa-map"></i> Mapa
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <br>
+        <section class="hero">
+            <div><h2>Regiões do Nordeste</h2>
+            <div class="content">
+                <p class="descricao-nordestino">
+                    O Nordeste do Brasil é uma das regiões mais ricas em diversidade cultural, natural e histórica. <br>Composta por 9 estados, cada parte do Nordeste possui suas características únicas e distintas.
+                </p>
+            </div>
+
+        </section>
+        <section class="cultural-highlights">
+            
+            <div class="culture-grid">
+
+                <div class="culture-item">
+                    <section class="cultural-highlights" style="background-color: #fff3e0;">
+                        <h3 style="font-size: 1.5em;">Nordeste</h3><br>
+                        <section class="region">
+                            <img src="imagens/mapa3.jpg" style="max-width: 90%;" alt="Imagem da Bahia">
+                        </section>
+                        
+                    </section>
+                </div>
+
+                <div class="culture-item">
+                    <section class="cultural-highlights" style="background-color: #fff3e0;">
+                        <h3 style="font-size: 1.5em;">Bahia</h3>
+                        <p style="font-size: 1.2em;">A Bahia é conhecida como o berço do Brasil, com uma rica herança africana e a famosa cidade de Salvador, primeira capital do Brasil. A música, como o samba e o axé, e as festas, como o Carnaval e a Festa de Iemanjá, são grandes destaques.</p><br>
+                        <section class="region">
+                            <img src="imagens/bahia.jpg" alt="Imagem da Bahia">
+                        </section>
+                        <p style="font-size: 1em;">Salvador, BA</p><br>
+                    </section>
+                </div>
+
+                <div class="culture-item">
+                    <section class="cultural-highlights" style="background-color: #fff3e0;">
+                        <h3 style="font-size: 1.5em;">Pernambuco</h3>
+                        <p style="font-size: 1.2em;">Pernambuco é famoso por suas tradições culturais, como o frevo e o maracatu. A cidade do Recife, com sua rica arquitetura colonial e os recifes de corais, e Olinda, com seu centro histórico reconhecido pela UNESCO, são símbolos de sua rica história.</p><br>
+                        <section class="region">
+                            <img src="imagens/pernambuco.jpg" alt="Imagem da Bahia">
+                        </section>
+                        <p style="font-size: 1em;">Recife PE</p><br>
+
+                    </section>
+                </div>
+
+                <div class="culture-item">
+                    <section class="cultural-highlights" style="background-color: #fff3e0;">
+                        <h3 style="font-size: 1.5em;">Ceará</h3>
+                        <p style="font-size: 1.2em;">O Ceará é conhecido pelas suas praias paradisíacas, como Jericoacoara e Canoa Quebrada. A capital, Fortaleza, é um centro cultural vibrante. Além disso, o Ceará é o berço de grandes ícones da música brasileira, como Luiz Gonzaga.</p><br>
+                        <section class="region">
+                            <img src="imagens/jericoacoara.jpg" alt="Imagem da Bahia">
+                        </section>
+                        <p style="font-size: 1em;">Jericoacoara, CE</p><br>
+
+                    </section>
+                </div>
+
+                <div class="culture-item">
+                    <section class="cultural-highlights" style="background-color: #fff3e0;">
+                        <h3 style="font-size: 1.5em;">Rio Grande do Norte</h3>
+                        <p style="font-size: 1.2em;">Famoso por suas belas dunas e praias, como a Praia de Pipa e Genipabu, o Rio Grande do Norte também é um grande produtor de sal e de frutos do mar. Sua capital, Natal, é conhecida pela hospitalidade e pela beleza de seu litoral.</p><br>
+                        <section class="region">
+                            <img src="imagens/GENIPABU.jpg" alt="Imagem da Bahia">
+                        </section>
+                        <p style="font-size: 1em;">Genipabu, RN</p><br>
+
+                    </section>
+                </div>
+
+                <div class="culture-item">
+                    <section class="cultural-highlights" style="background-color: #fff3e0;">
+                        <h3 style="font-size: 1.5em;">Maranhão</h3>
+                        <p style="font-size: 1.2em;"><p>Maranhão abriga uma das maiores maravilhas naturais do Brasil, os Lençóis Maranhenses. Além disso, sua rica herança cultural é visível na cidade de São Luís, com seu centro histórico preservado e as festas de Bumba Meu Boi.</p><br>
+                        <section class="region">
+                            <img src="imagens/lençóis.jpg" alt="Imagem da Bahia">
+                        </section>
+                        <p style="font-size: 1em;">Lençóis Maranhences, MA</p><br>
+
+                    </section>
+                </div>
+
+                <div class="culture-item">
+                    <section class="cultural-highlights" style="background-color: #fff3e0;">
+                        <h3 style="font-size: 1.5em;">Paraíba</h3>
+                        <p style="font-size: 1.2em;"><p>Com a cidade de João Pessoa como capital, Paraíba é conhecida pela tranquilidade de suas praias, pelo artesanato tradicional e pela cultura vibrante, que inclui o forró e as festas juninas.</p><br>
+                        <section class="region">
+                            <img src="imagens/joaopessoa.jpeg" alt="Imagem da Bahia">
+                        </section>
+                        <p style="font-size: 1em;">João Pessoa, PB</p><br>
+
+                    </section>
+                </div>
+
+                <div class="culture-item">
+                    <section class="cultural-highlights" style="background-color: #fff3e0;">
+                        <h3 style="font-size: 1.5em;">Alagoas</h3>
+                        <p style="font-size: 1.2em;">Alagoas tem algumas das mais belas praias do Brasil, como a Praia do Francês e Maragogi, com águas cristalinas e piscinas naturais. Sua culinária e seu folclore também são grandes atrativos culturais.</p><br>
+                        <section class="region">
+                            <img src="imagens/maragogi.jpg" alt="Imagem da Bahia">
+                        </section>
+                        <p style="font-size: 1em;">Maragogi, AL</p><br>
+
+                    </section>
+                </div>
+
+                <div class="culture-item">
+                    <section class="cultural-highlights" style="background-color: #fff3e0;">
+                        <h3 style="font-size: 1.5em;">Sergipe</h3>
+                        <p style="font-size: 1.2em;">Sergipe, o menor estado do Brasil, é famoso pelo Cânion do Xingó e pelas festas populares, como a Festa do Lambe Sujo. Aracaju, sua capital, é uma cidade tranquila, com uma rica herança cultural.</p><br>
+                        <section class="region">
+                            <img src="imagens/XINGÓ.jpg" alt="Imagem da Bahia">
+                        </section>
+                        <p style="font-size: 1em;">Cânion do Xingó, SE</p><br>
+
+                    </section>
+                </div>
+
+                <div class="culture-item">
+                    <section class="cultural-highlights" style="background-color: #fff3e0;">
+                        <h3 style="font-size: 1.5em;">Piauí</h3>
+                        <p style="font-size: 1.2em;">Piauí é conhecido pelo Parque Nacional da Serra da Capivara, onde se encontram alguns dos mais antigos vestígios arqueológicos das Américas. Sua capital, Teresina, é um importante centro cultural e comercial da região.</p><br>
+                        <section class="region">
+                            <img src="imagens/serra capivara.jpeg" alt="Imagem da Bahia">
+                        </section>
+                        <p style="font-size: 1em;">Serra da Capivara, PI</p><br>
+
+                    </section>
+                </div>
+        </section>
+
+        <section class="celebrations">
+            <h3>Gírias Nordestinas Populares</h3><br>
+            <p><strong>Arretado :</strong> Algo muito bom ou alguém bravo. <p>Exemplo positivo: "Esse show foi arretado de bom!"</p><p>Exemplo negativo: "Ele tá arretado com essa confusão."</p><br>
+            <p><strong>Oxe:</strong> Expressa surpresa ou dúvida. Exemplo: "Oxe, tu não sabia disso?"</p><br>
+            <p><strong>Massa :</strong> Algo legal ou divertido. Exemplo: "Essa festa tá massa!"</p><br>
+            <p><strong>Vixe :</strong> Surpresa ou espanto. Exemplo: "Vixe, que coisa complicada!"</p><br>
+            <p><strong>Mangar :</strong> Zombar de alguém. Exemplo: "Para de mangar de mim!"</p><br>
+            <p><strong>Cabra da peste :</strong> Pessoa corajosa. Exemplo: "Esse é um cabra da peste, não foge da luta!"</p><br>
+            <p><strong>Mainha/Painho :</strong> Mãe e pai. Exemplo: "Vou perguntar a mainha se posso sair."</p><br>
+            <p><strong>Aperreado :</strong> Preocupado ou estressado. Exemplo: "Tô aperreado com esse trabalho."</p><br>
+            <p><strong>Abestalhado :</strong> Pessoa boba ou desatenta. Exemplo: "Tu tá abestalhado hoje, não ouviu nada do que eu falei?"</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Dia do Nordestino. Feito com ❤️ para celebrar o Nordeste.</p>
+    </footer>
+
+</body>
+</html>
